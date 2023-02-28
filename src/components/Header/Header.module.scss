@@ -2,9 +2,28 @@
 
 .header {
   background: $azul-escuro;
-  color: #fff;
-  padding: 2rem 1.5rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  div {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1920px;
+    padding: 2rem 1.5rem;
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+      flex-direction: column;
+      gap: 2rem;
+      justify-content: space-between;
+      padding: 2rem 3.75rem;
+      .menu {
+        display: none;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      padding: 2rem 7.5rem;
+    }
+  }
 }

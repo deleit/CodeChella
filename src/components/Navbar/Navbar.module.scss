@@ -1,0 +1,21 @@
+@import '../../assets/styles.scss';
+
+.nav {
+  display: none;
+  @media screen and (min-width: $tablet) {
+    display: block;
+    width: 100%;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 2.5rem;
+    text-align: center;
+    ul {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    width: 50%;
+  }
+}

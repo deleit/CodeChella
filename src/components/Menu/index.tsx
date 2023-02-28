@@ -2,7 +2,7 @@ import styles from './Menu.module.scss';
 
 export default function Menu({ openMenu }: {openMenu: boolean}) {
   return (
-    <div className={styles.menu} style={{ display: openMenu ? 'flex' : 'none' }}>
+    <nav className={styles.menu} style={{ display: openMenu ? 'flex' : 'none' }}>
       <ul>
         <li>
           A experiência
@@ -20,6 +20,6 @@ export default function Menu({ openMenu }: {openMenu: boolean}) {
           Ingresso
         </li>
       </ul>
-    </div>
+    </nav>
   )
 }
