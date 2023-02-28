@@ -1,0 +1,19 @@
+@import '../../assets/styles.scss';
+
+.menu {
+  background: $azul-escuro;
+  padding: 1rem;
+  position: absolute;
+  color: #fff;
+  right: 0;
+  flex-direction: column;
+  text-align: center;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.separator {
+  margin: 0.5rem;
+}
