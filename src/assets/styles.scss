@@ -11,3 +11,9 @@ $mostarda: #DF9010;
 $mobile: 767px;
 $tablet: 768px;
 $desktop: 1440px;
+
+// animações
+@keyframes fadein {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

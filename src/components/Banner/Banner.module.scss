@@ -5,12 +5,22 @@
   justify-content: center;
   align-items: center;
   flex-grow: 0;
+  min-height: 250px;
+  animation: fadein 2s;
+  background: #fff;
+  @media screen and (min-width: $tablet) {
+    min-height: 384px;
+  }
+  @media screen and (min-width: $desktop) {
+    min-height: 407px;
+  }
   img {
     width: 100%;
     opacity: 40%;
     resize: vertical;
     max-height: 270px;
     object-fit: cover;
+    min-height: 250px;
     @media screen and (min-width: $tablet) {
       max-height: 384px;
     }

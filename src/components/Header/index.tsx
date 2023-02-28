@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 import Logo from 'assets/LogoBranco.png';
 import BotaoMenu from 'assets/BotaoMenu.png';
@@ -16,7 +17,9 @@ export default function Header() {
     <>
       <header className={styles.header}>
         <div>
-          <img src={Logo} alt="Logo do Codechella" height={64} />
+          <Link to="/">
+            <img src={Logo} alt="Logo do Codechella" height={64} />
+          </Link>
           <img src={BotaoMenu} alt="Menu" className={styles.menu} onClick={handleOpenMenu} />
           <Navbar />
         </div>

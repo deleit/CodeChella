@@ -1,15 +1,20 @@
 import styles from './Menu.module.scss';
+import { Link } from 'react-router-dom';
 
 export default function Menu({ openMenu }: {openMenu: boolean}) {
   return (
     <nav className={styles.menu} style={{ display: openMenu ? 'flex' : 'none' }}>
       <ul>
         <li>
-          A experiência
+          <Link to="/experiencia">
+            A experiência
+          </Link>
         </li>
         <hr className={styles.separator} />
         <li>
-          Mapa de Setores
+          <Link to="/setores">
+            Mapa de Setores
+          </Link>
         </li>
         <hr className={styles.separator} />
         <li>
