@@ -1,0 +1,33 @@
+@import '../../assets/styles.scss';
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0;
+  img {
+    width: 100%;
+    opacity: 40%;
+    resize: vertical;
+    max-height: 270px;
+    object-fit: cover;
+    @media screen and (min-width: $tablet) {
+      max-height: 384px;
+    }
+    @media screen and (min-width: $desktop) {
+      max-height: 407px;
+    }
+  }
+  h2 {
+    position: absolute;
+    font-family: 'Calistoga';
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    color: $cinza;
+    @media screen and (min-width: $tablet) {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+  }
+}
