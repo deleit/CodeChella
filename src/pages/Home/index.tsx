@@ -1,12 +1,16 @@
 import Banner from "components/Banner";
 import TopBanner from "assets/TopBannerVerao.jpg";
+import SecaoDatas from "components/SecaoDatas";
 
 export default function Home() {
   return(
-    <main>
+    <>
       <Banner src={TopBanner}>
-        Boas-vindas ao <br/>#CodeChella2023!
+          Boas-vindas ao <br/>#CodeChella2023!
       </Banner>
-    </main>
+      <main>
+        <SecaoDatas />
+      </main>
+    </>
   )
 }

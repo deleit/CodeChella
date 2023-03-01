@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
         <div className={styles.info}>
           <span>Desenvolvido por <a href="https://github.com/deleit">deleit.</a> </span>
-          <span>Projeto fictício sem fins lucrativos</span>
+          <span>Projeto fictício sem fins comerciais.</span>
         </div>
       </div>
     </footer>

@@ -6,10 +6,11 @@
   justify-content: center;
   div {
     align-items: center;
+    box-sizing: border-box;
     color: #fff;
     display: flex;
     justify-content: space-between;
-    max-width: 1920px;
+    max-width: $limite;
     padding: 2rem 1.5rem;
     width: 100%;
     @media screen and (min-width: $tablet) {
