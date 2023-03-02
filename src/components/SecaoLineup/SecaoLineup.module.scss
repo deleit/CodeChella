@@ -1,0 +1,26 @@
+@import '../../assets/styles.scss';
+
+.section {
+  animation: fadein 2s;
+  align-items: center;
+  box-sizing: border-box;
+  color: $cinza;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway';
+  gap: 2rem;
+  justify-content: center;
+  padding: 0 1.5rem;
+  padding-bottom: 3rem;
+  width: 100%;
+  text-align: center;
+  @media screen and (min-width: $desktop) {
+    max-width: $limite;
+    padding: 0rem 7rem;
+  }
+  h2 {
+    font-family: 'Calistoga';
+    font-size: 3rem;
+    padding: 2rem;
+  }
+}

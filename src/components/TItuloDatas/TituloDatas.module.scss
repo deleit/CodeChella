@@ -1,0 +1,30 @@
+@import '../../assets/styles.scss';
+
+.titulo {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  max-width: 96%;
+  width: 100%;
+  justify-content: center;
+  h3 {
+    background-color: $mostarda;
+    color: #fff;
+    flex: none;
+    font-family: 'Calistoga';
+    font-size: 2rem;
+    line-height: 42px;
+    padding: 1rem;
+    @media screen and (min-width: $tablet) {
+      font-size: 3rem;
+    }
+  }
+  .separator {
+    display: none;
+    @media screen and (min-width: $tablet) {
+      border-bottom: 1px solid $mostarda;
+      display: block;
+      width: 100%;
+    }
+  }
+}
