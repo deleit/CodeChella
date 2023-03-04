@@ -1,0 +1,45 @@
+@import 'assets/styles.scss';
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  margin: 0.5rem auto;
+  li {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    div {
+      display: flex;
+      flex-direction: column;
+      flex: none;
+      gap: 1rem;
+      @media screen and (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+      }
+    }
+    &:nth-child(1) {
+      font-size: 3rem;
+      font-weight: 800;
+    }
+    &:nth-child(2) {
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    &:nth-child(3) {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    &:nth-child(4) {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+    @media screen and (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

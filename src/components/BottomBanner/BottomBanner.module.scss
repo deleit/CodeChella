@@ -1,6 +1,7 @@
 @import 'assets/styles.scss';
 
 .bottom {
+  animation: fadein 2s;
   height: 338px;
   mix-blend-mode: multiply;
   object-fit: cover;

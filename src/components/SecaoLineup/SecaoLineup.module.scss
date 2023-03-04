@@ -1,8 +1,8 @@
-@import '../../assets/styles.scss';
+@import 'assets/styles.scss';
 
 .section {
-  animation: fadein 2s;
   align-items: center;
+  animation: fadein 2s;
   box-sizing: border-box;
   color: $cinza;
   display: flex;
@@ -10,13 +10,18 @@
   font-family: 'Raleway';
   gap: 2rem;
   justify-content: center;
+  margin: auto;
   padding: 0 1.5rem;
   padding-bottom: 3rem;
   width: 100%;
   text-align: center;
   @media screen and (min-width: $desktop) {
+    margin-bottom: 3.5rem;
     max-width: $limite;
     padding: 0rem 7rem;
+  }
+  div {
+    gap: 2rem;
   }
   h2 {
     font-family: 'Calistoga';
