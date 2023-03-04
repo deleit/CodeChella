@@ -1,0 +1,16 @@
+@import 'assets/styles.scss';
+
+.experiencia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: $limite;
+  margin: auto;
+  @media screen and (min-width: $tablet) {
+    padding: 0 2.25rem;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 2rem 2.25rem;
+  }
+}
