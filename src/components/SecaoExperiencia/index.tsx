@@ -11,6 +11,7 @@ export default function SecaoExperiencia() {
         src={Acessibilidade} 
         alt="Mulher de terno celebrando" 
         titulo="Acessibilidade e Inclusão"
+        tipo="experiencia"
       >
         Nosso evento tenta abraçar um público mais amplo em todos os sentidos, 
         de todas as idades, corpos, gostos e pensamentos! Isso está presente no 
@@ -23,6 +24,7 @@ export default function SecaoExperiencia() {
         src={Sustentabilidade} 
         alt="Garrafas de vidro em uma sacola de pano" 
         titulo="Sustentabilidade"
+        tipo="experiencia"
       >
         Queremos estar aqui celebrando daqui a 50, 100 anos! 
         Por isso, levamos o futuro do nosso planeta a sério. 
@@ -34,6 +36,7 @@ export default function SecaoExperiencia() {
         src={Atracoes} 
         alt="Roda gigante em frente a um céu limpo" 
         titulo="Atrações"
+        tipo="experiencia"
       >
         Intervenções artísticas e culturais para todos os gostos! 
         Durante os intervalos dos shows, nossa experiência contará 

@@ -1,0 +1,75 @@
+@import 'assets/styles.scss';
+
+.mapa {
+  align-items: center;
+  color: $cinza;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  font-family: 'Raleway';
+  @media screen and (min-width: $desktop) {
+    flex-direction: row;
+    justify-content: center;
+  }
+  img {
+    max-width: 648px;
+    width: 100%;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    h2 {
+      line-height: 2.5rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      @media screen and (min-width: 2rem) {
+        font-size: 2rem;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      li {
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+        div {
+          height: 2rem;
+          width: 2rem;
+        }
+        span {
+          line-height: 2.5rem;
+          font-size: 1.25rem;
+          font-weight: 500;
+        }
+        &:nth-child(1) {
+          div {
+            background-color: #0E7DF1;
+          }
+        }
+        &:nth-child(2) {
+          div {
+            background-color: #FE016E;
+          }
+        }
+        &:nth-child(3) {
+          div {
+            background-color: #01A89E;
+          }
+        }
+        &:nth-child(4) {
+          div {
+            background-color: #3F51B5;
+          }
+        }
+        &:nth-child(5) {
+          div {
+            background-color: #0E7DF1;
+          }
+        }
+      }
+    }
+  }
+}
