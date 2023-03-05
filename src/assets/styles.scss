@@ -18,20 +18,3 @@ $limite: 1920px;
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
-//mixins
-@mixin card-experiencia {
-  @media screen and (min-width: $desktop) {
-    flex-direction: row;
-    &:nth-child(2n) {
-      flex-direction: row-reverse;
-      div {
-        align-items: end;
-        margin-left: 0;
-        margin-right: 3rem;
-        text-align: right;
-      }
-    }
-  }
-}
-

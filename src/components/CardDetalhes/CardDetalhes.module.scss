@@ -1,0 +1,43 @@
+@import 'assets/styles.scss';
+
+.cardDetalhes {
+  align-items: center;
+  animation: fadein 2s;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  @media screen and (min-width: $desktop) {
+    &:nth-child(2n) {
+      margin-top: 106px;
+    }
+  }
+  img {
+    border-radius: 1rem;
+    height: 239px;
+    max-width: 382px;
+    min-width: 312px;
+    object-fit: cover;
+    width: 53.15%;
+    @media screen and (min-width: $desktop) {
+      width: 100%;
+    }
+  }
+  div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 383px;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 2.5rem;
+    }
+    p {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 2.5rem;
+    }
+  }
+}

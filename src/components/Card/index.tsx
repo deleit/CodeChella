@@ -1,8 +1,8 @@
 import styles from './Card.module.scss';
 
-export default function Card({src, alt, titulo, tipo, children}: {src: string, alt: string, titulo: string, tipo:string, children: React.ReactNode}) {
+export default function Card({src, alt, titulo, children}: {src: string, alt: string, titulo: string, children: React.ReactNode}) {
   return (
-    <div className={`${styles.card} ${tipo === 'experiencia' ? styles.experiencia : ''}`}>
+    <div className={styles.card}>
       <img src={src} alt={alt} />
       <div>
         <h2>{titulo}</h2>
