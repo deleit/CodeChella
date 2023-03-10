@@ -1,5 +1,6 @@
 import Banner from "components/Banner";
 import BannerIngresso from "assets/BannerIngresso.jpeg";
+import SecaoIngresso from "components/SecaoIngresso";
 
 export default function Ingresso() {
   return (
@@ -8,7 +9,7 @@ export default function Ingresso() {
         Garanta seu Ingresso
       </Banner>
       <main>
-
+        <SecaoIngresso />
       </main>
     </>
   );

@@ -1,0 +1,63 @@
+@import 'assets/styles.scss';
+
+.ingresso {
+  align-items: center;
+  animation: fadein 2s;
+  box-sizing: border-box;
+  color: $cinza;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 795px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+  @media screen and (min-width: $tablet) {
+    padding: 3rem 3.75rem;
+  }
+  h3 {
+    font-family: 'Calistoga';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+    @media screen and (min-width: $tablet) {
+      font-size: 3rem;
+      line-height: 3.75rem;
+    }
+  }
+  form, div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    div {
+      @media screen and (min-width: $desktop) {
+        flex-direction: row;
+      }
+    }
+    .btnContainer {
+      width: auto;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Raleway';
+      font-size: 2rem;
+      font-weight: 700;
+      gap: 0.5rem;
+      line-height: 2.25rem;
+      width: 100%;
+      input, select {
+        border: none;
+        height: 2.5rem;
+        font-size: 1.25rem;
+        padding: 0.25rem 1rem;
+      }
+      select {
+        box-sizing: border-box;
+        min-height: 3rem;
+      }
+    }
+  }
+}

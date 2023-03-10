@@ -1,24 +1,29 @@
 @import 'assets/styles.scss';
 
 .botao {
-  align-items: center;
   background-color: $azul-escuro;
   border: none;
   border-radius: 1rem;
   box-shadow: 4px 4px 0px #000000;
-  display: flex;
-  gap: 1rem;
-  padding: 0.5rem 2.75rem;
+  padding: 0.5rem 1rem;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    width: auto;
+  }
   &:hover {
     background-color: $azul-hover;
     cursor: pointer;
     transition: 0.25s;
   }
   .texto {
+    align-items: center;
     color: #fff;
+    display: flex;
     font-family: 'Raleway';
     font-size: 1.25rem;
     font-weight: 700;
+    gap: 1rem;
+    justify-content: center;
     line-height: 2.5rem;
   }
 }

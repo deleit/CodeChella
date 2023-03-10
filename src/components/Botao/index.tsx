@@ -1,10 +1,14 @@
 import styles from "./Botao.module.scss";
 
-export default function Botao({ children, icone }: {children: React.ReactNode, icone: string}) {
+interface BotaoProps {
+  type?: "submit" | "reset" | "button" | undefined;
+  children: React.ReactNode;
+}
+
+export default function Botao({ type, children }: BotaoProps) {
   return(
-    <button className={styles.botao}>
+    <button className={styles.botao} type={type} >
       <span className={styles.texto}>{children}</span>
-      <img src={icone} alt="Ícone do botão" />
     </button>
   );
 }

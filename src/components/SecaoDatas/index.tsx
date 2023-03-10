@@ -1,7 +1,7 @@
 import styles from "./SecaoDatas.module.scss";
 import DatasVerao from "assets/DatasVerao.jpg";
 import Botao from "components/Botao";
-import IconeIngresso from "assets/IconeIngresso.png"
+import LocalActivityIcon from '@mui/icons-material/LocalActivity';
 
 export default function SecaoDatas() {
   return (
@@ -15,8 +15,9 @@ export default function SecaoDatas() {
           Somos um festival diverso, com vários artistas e referências. 
           Divirta-se!
         </span>
-        <Botao icone={IconeIngresso}>
+        <Botao>
           Comprar ingresso!
+          <LocalActivityIcon sx={{ fontSize: '2rem' }} />
         </Botao>
       </div>
     </section>
