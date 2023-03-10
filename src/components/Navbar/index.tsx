@@ -15,8 +15,16 @@ export default function Navbar() {
             Mapa de Setores
           </Link>
         </li>
-        <li>Informações</li>
-        <li>Ingresso</li>
+        <li>
+          <Link to="/faq">
+            Informações
+          </Link>
+        </li>
+        <li>
+          <Link to="/ingresso">
+            Ingresso
+          </Link>
+        </li>
       </ul>
     </nav>
   )

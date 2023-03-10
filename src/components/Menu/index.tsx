@@ -17,12 +17,14 @@ export default function Menu({ openMenu }: {openMenu: boolean}) {
           </Link>
         </li>
         <hr className={styles.separator} />
-        <li>
+        <Link to="/faq">
           Informações
-        </li>
+        </Link>
         <hr className={styles.separator} />
         <li>
-          Ingresso
+          <Link to="/ingresso">
+            Ingresso
+          </Link>
         </li>
       </ul>
     </nav>
