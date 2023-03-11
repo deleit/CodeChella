@@ -9,7 +9,8 @@ export default function SecaoIngresso() {
     const formData = new FormData(e.currentTarget);
     const inputObject = Object.fromEntries(formData);
 
-    console.log(inputObject);
+    sessionStorage.setItem("ingresso", JSON.stringify(inputObject));
+    window.location.reload();
   }
 
   return (
