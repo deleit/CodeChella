@@ -8,8 +8,7 @@ export default function IngressoComprado({ ingresso }: { ingresso: IIngresso }) 
   return (
     <section className={styles.ingressoComprado}>
       <h3>
-        Uhul, agora sim! 
-        <br />
+        Uhul, agora sim! <br />
         Seu ingresso está aqui, apresente
         na entrada do evento e divirta-se!
       </h3>
