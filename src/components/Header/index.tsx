@@ -2,9 +2,11 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.scss';
 import Logo from 'assets/LogoBranco.png';
-import BotaoMenu from 'assets/BotaoMenu.png';
 import Menu from 'components/Menu';
 import Navbar from 'components/Navbar';
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
 
 export default function Header() {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -20,11 +22,17 @@ export default function Header() {
           <Link to="/">
             <img src={Logo} alt="Logo do Codechella" height={64} />
           </Link>
-          <img src={BotaoMenu} alt="Menu" className={styles.menu} onClick={handleOpenMenu} />
+          <button className={styles.menu} aria-label="Menu">
+            {
+              openMenu
+              ? <CloseIcon onClick={handleOpenMenu} fontSize="large" />
+              : <MenuIcon onClick={handleOpenMenu} fontSize="large" />
+            }
+          </button>
           <Navbar />
         </div>
       </header>
-      <Menu openMenu={openMenu} />
+      <Menu openMenu={openMenu} setOpenMenu={setOpenMenu} />
     </>
   )
 }

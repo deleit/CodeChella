@@ -11,11 +11,14 @@
   line-height: 2.5rem;
   overflow: hidden;
   padding: 1rem;
-  position: absolute;
+  position: relative;
   right: 0;
   text-align: center;
   z-index: 99;
   hr {
     margin: 0.5rem;
+  }
+  @media screen and (min-width: $tablet) {
+    display: none !important;
   }
 }

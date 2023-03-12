@@ -13,6 +13,12 @@
     max-width: $limite;
     padding: 2rem 1.5rem;
     width: 100%;
+    .menu {
+      color: #fff;
+      background-color: $azul-escuro;
+      border: none;
+      padding: 0;
+    }
     @media screen and (min-width: $tablet) {
       flex-direction: column;
       gap: 2rem;
