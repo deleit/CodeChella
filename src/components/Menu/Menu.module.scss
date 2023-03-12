@@ -1,6 +1,7 @@
 @import 'assets/styles.scss';
 
 .menu {
+  animation: dropdownmenu 1s;
   background: $azul-escuro;
   box-sizing: border-box;
   color: #fff;

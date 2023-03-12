@@ -1,0 +1,30 @@
+@import 'assets/styles.scss';
+
+.faq {
+  animation: fadein 2s;
+  box-sizing: border-box;
+  color: $cinza;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 996px;
+  width: 100%;
+  @media screen and (min-width: $tablet) {
+    padding: 3rem 3.75rem;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 3rem 0;
+  }
+  h3 {
+    font-family: 'Calistoga';
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  .perguntas {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

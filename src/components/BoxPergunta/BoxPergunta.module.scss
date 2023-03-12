@@ -1,0 +1,35 @@
+@import 'assets/styles.scss';
+
+.box {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway';
+  line-height: 2.5rem;
+  width: 100%;
+  button {
+    align-items: center;
+    background-color: $azul-escuro;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    font-family: 'Raleway';
+    font-size: 2rem;
+    font-weight: 700;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: left;
+  }
+  div {
+    background-color: $azul-claro;
+    p {
+      color: $cinza;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin: 1rem;
+      a {
+        text-decoration: underline;
+      }
+    }
+  }
+}

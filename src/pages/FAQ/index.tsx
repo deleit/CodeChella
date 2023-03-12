@@ -1,5 +1,6 @@
 import Banner from "components/Banner";
 import BannerFAQ from "assets/BannerFAQ.jpeg";
+import SecaoFAQ from "components/SecaoFAQ";
 
 export default function FAQ() {
   return (
@@ -8,7 +9,7 @@ export default function FAQ() {
         Informações Gerais
       </Banner>
       <main>
-
+        <SecaoFAQ />
       </main>
     </>
   );
