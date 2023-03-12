@@ -36,7 +36,7 @@ export default function Footer() {
           </ul>
         </div>
         <div className={styles.info}>
-          <span>Desenvolvido por <a href="https://github.com/deleit">deleit.</a> </span>
+          <span>Desenvolvido por <a href="https://github.com/deleit">deleit.</a> Design por Alura.</span>
           <span>Projeto fictício sem fins comerciais.</span>
         </div>
       </div>
