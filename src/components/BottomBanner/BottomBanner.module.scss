@@ -2,7 +2,9 @@
 
 .bottom {
   animation: fadein 2s;
+  box-sizing: border-box;
   height: 338px;
+  max-width: 100%;
   mix-blend-mode: multiply;
   object-fit: cover;
   resize: vertical;
