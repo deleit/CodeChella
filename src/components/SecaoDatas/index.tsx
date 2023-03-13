@@ -2,8 +2,16 @@ import styles from "./SecaoDatas.module.scss";
 import DatasVerao from "assets/DatasVerao.jpg";
 import Botao from "components/Botao";
 import LocalActivityIcon from '@mui/icons-material/LocalActivity';
+import { useNavigate } from "react-router-dom";
 
 export default function SecaoDatas() {
+  const navigate = useNavigate();
+
+  const irParaIngresso = () => {
+    navigate("/ingresso");
+    window.scrollTo(0, 0);
+  }
+
   return (
     <section className={styles.section}>
       <img src={DatasVerao} alt="Público de um festival" className={styles.publico} />
@@ -15,7 +23,7 @@ export default function SecaoDatas() {
           Somos um festival diverso, com vários artistas e referências. 
           Divirta-se!
         </span>
-        <Botao>
+        <Botao onClick={irParaIngresso}>
           Comprar ingresso!
           <LocalActivityIcon sx={{ fontSize: '2rem' }} />
         </Botao>
