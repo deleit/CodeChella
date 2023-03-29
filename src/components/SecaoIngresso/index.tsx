@@ -13,13 +13,18 @@ export default function SecaoIngresso() {
     window.location.reload();
   }
 
+  const data = new Date();
+  const mes = String(data.getMonth() + 1).padStart(2, '0');
+  const dia = String(data.getDate()).padStart(2, '0');
+  const idadeMinima = `2010-${mes}-${dia}`;
+
   return (
     <section className={styles.ingresso}>
       <h3>Preencha o formulário a seguir:</h3>
       <form onSubmit={handleSubmit}>
         <label>
           Nome Completo:
-          <input type="text" name="nome" id="nome" required />
+          <input type="text" name="nome" id="nome" minLength={8} required />
         </label>
         <label>
           Email:
@@ -39,7 +44,7 @@ export default function SecaoIngresso() {
           </label>
           <label>
             Data de nascimento:
-            <input type="date" name="nascimento" id="nascimento" required />
+            <input type="date" name="nascimento" id="nascimento" max={idadeMinima} required />
           </label>
         </div>
         <div className={styles.btnContainer}>
